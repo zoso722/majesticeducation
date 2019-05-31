@@ -1,0 +1,35 @@
+<?php
+
+use Illuminate\Support\Facades\Schema;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Database\Migrations\Migration;
+
+class CreateAudiosTable extends Migration
+{
+    /**
+     * Run the migrations.
+     *
+     * @return void
+     */
+    public function up()
+    {
+        Schema::create('audios', function (Blueprint $table) {
+            $table->bigIncrements('id');
+            $table->unsignedInteger('libro_id');
+            $table->foreign('libro_id')->references('id')->on('libros');
+            $table->string('titulo', 100)->unique();
+            $table->string('url', 100)->unique();
+            $table->timestamps();
+        });
+    }
+
+    /**
+     * Reverse the migrations.
+     *
+     * @return void
+     */
+    public function down()
+    {
+        Schema::dropIfExists('audios');
+    }
+}
