@@ -168,37 +168,37 @@ class DatabaseSeeder extends Seeder
                 'created_at' => '2019-05-27 00:00:00',
                 'updated_at' => '2019-05-27 00:00:00'
             ],
-            0 => [
+            1 => [
                 'id'        => 2,
                 'subsistema'     => 'EPOEM',
                 'created_at' => '2019-05-27 00:00:00',
                 'updated_at' => '2019-05-27 00:00:00'
             ],
-            0 => [
+            2 => [
                 'id'        => 3,
                 'subsistema'     => 'DGETI',
                 'created_at' => '2019-05-27 00:00:00',
                 'updated_at' => '2019-05-27 00:00:00'
             ],
-            0 => [
+            3 => [
                 'id'        => 4,
                 'subsistema'     => 'CONALEP',
                 'created_at' => '2019-05-27 00:00:00',
                 'updated_at' => '2019-05-27 00:00:00'
             ],
-            0 => [
+            4 => [
                 'id'        => 5,
                 'subsistema'     => 'Colegio de Bachilleres',
                 'created_at' => '2019-05-27 00:00:00',
                 'updated_at' => '2019-05-27 00:00:00'
             ],
-            0 => [
+            5 => [
                 'id'        => 6,
                 'subsistema'     => 'Cecyt-IPN',
                 'created_at' => '2019-05-27 00:00:00',
                 'updated_at' => '2019-05-27 00:00:00'
             ],
-            0 => [
+            6 => [
                 'id'        => 7,
                 'subsistema'     => 'CCH',
                 'created_at' => '2019-05-27 00:00:00',
@@ -451,6 +451,129 @@ class DatabaseSeeder extends Seeder
                 'subsistema_id' => 6,
                 'semestre_id'   => 5,
                 'libro_id'      => 10,
+                'created_at' => '2019-05-27 00:00:00',
+                'updated_at' => '2019-05-27 00:00:00'
+            ],
+        ]);
+
+        \DB::table('songs')->insert([
+            0 => [
+                'id'            => 1,
+                'libro_id'      => 3,
+                'titulo'        => 'the best english 3 001',
+                'url'           => 'https://drive.google.com/uc?id=0B4lctXErlSvzLUc1SlF3NWM4UVE',
+                'created_at' => '2019-05-27 00:00:00',
+                'updated_at' => '2019-05-27 00:00:00'
+            ],
+            1 => [
+                'id'            => 2,
+                'libro_id'      => 3,
+                'titulo'        => 'the best english 3 002',
+                'url'           => 'https://drive.google.com/uc?id=0B4lctXErlSvzaEl0N0RMWjhSU3c',
+                'created_at' => '2019-05-27 00:00:00',
+                'updated_at' => '2019-05-27 00:00:00'
+            ],
+            2 => [
+                'id'            => 3,
+                'libro_id'      => 3,
+                'titulo'        => 'the best english 3 003',
+                'url'           => 'https://drive.google.com/uc?id=0B4lctXErlSvzWk5hbWdCamdRLVE',
+                'created_at' => '2019-05-27 00:00:00',
+                'updated_at' => '2019-05-27 00:00:00'
+            ],
+            3 => [
+                'id'            => 4,
+                'libro_id'      => 3,
+                'titulo'        => 'the best english 3 004',
+                'url'           => 'https://drive.google.com/uc?id=0B4lctXErlSvzelREQ3JVY2JqYWs',
+                'created_at' => '2019-05-27 00:00:00',
+                'updated_at' => '2019-05-27 00:00:00'
+            ],
+            4 => [
+                'id'            => 5,
+                'libro_id'      => 3,
+                'titulo'        => 'the best english 3 005',
+                'url'           => 'https://drive.google.com/uc?id=0B4lctXErlSvzc29PRTZhMzdWSWc',
+                'created_at' => '2019-05-27 00:00:00',
+                'updated_at' => '2019-05-27 00:00:00'
+            ],
+            5 => [
+                'id'            => 6,
+                'libro_id'      => 3,
+                'titulo'        => 'the best english 3 006',
+                'url'           => 'https://drive.google.com/uc?id=0B4lctXErlSvzZ2Q0MWRaQVZFLTA',
+                'created_at' => '2019-05-27 00:00:00',
+                'updated_at' => '2019-05-27 00:00:00'
+            ],
+            6 => [
+                'id'            => 7,
+                'libro_id'      => 3,
+                'titulo'        => 'the best english 3 007',
+                'url'           => 'https://drive.google.com/uc?id=0B4lctXErlSvzZWhBU2RHR1B3Vm8',
+                'created_at' => '2019-05-27 00:00:00',
+                'updated_at' => '2019-05-27 00:00:00'
+            ],
+            7 => [
+                'id'            => 8,
+                'libro_id'      => 3,
+                'titulo'        => 'the best english 3 008',
+                'url'           => '',
+                'created_at' => '2019-05-27 00:00:00',
+                'updated_at' => '2019-05-27 00:00:00'
+            ],
+            8 => [
+                'id'            => 9,
+                'libro_id'      => 3,
+                'titulo'        => 'the best english 3 009',
+                'url'           => 'https://drive.google.com/uc?id=0B4lctXErlSvzQXJ1OS1ERVdzdnM',
+                'created_at' => '2019-05-27 00:00:00',
+                'updated_at' => '2019-05-27 00:00:00'
+            ],
+            9 => [
+                'id'            => 10,
+                'libro_id'      => 3,
+                'titulo'        => 'the best english 3 010',
+                'url'           => 'https://drive.google.com/uc?id=0B4lctXErlSvzRWt3c1hjbk1ib0U',
+                'created_at' => '2019-05-27 00:00:00',
+                'updated_at' => '2019-05-27 00:00:00'
+            ],
+            10 => [
+                'id'            => 11,
+                'libro_id'      => 3,
+                'titulo'        => 'the best english 3 011',
+                'url'           => 'https://drive.google.com/uc?id=0B4lctXErlSvzMzRnQkJ6ckR5aTA',
+                'created_at' => '2019-05-27 00:00:00',
+                'updated_at' => '2019-05-27 00:00:00'
+            ],
+            11 => [
+                'id'            => 12,
+                'libro_id'      => 3,
+                'titulo'        => 'the best english 3 012',
+                'url'           => 'https://drive.google.com/uc?id=0B4lctXErlSvzRlkwNk1HTEhMd1E',
+                'created_at' => '2019-05-27 00:00:00',
+                'updated_at' => '2019-05-27 00:00:00'
+            ],
+            12 => [
+                'id'            => 13,
+                'libro_id'      => 3,
+                'titulo'        => 'the best english 3 013',
+                'url'           => 'https://drive.google.com/uc?id=0B4lctXErlSvzbW1lanFacXZYVEU',
+                'created_at' => '2019-05-27 00:00:00',
+                'updated_at' => '2019-05-27 00:00:00'
+            ],
+            13 => [
+                'id'            => 14,
+                'libro_id'      => 3,
+                'titulo'        => 'the best english 3 014',
+                'url'           => 'https://drive.google.com/uc?id=0B4lctXErlSvzYzFEZjlueUR1dUU',
+                'created_at' => '2019-05-27 00:00:00',
+                'updated_at' => '2019-05-27 00:00:00'
+            ],
+            14 => [
+                'id'            => 15,
+                'libro_id'      => 3,
+                'titulo'        => 'the best english 3 015',
+                'url'           => 'https://drive.google.com/uc?id=0B4lctXErlSvzNUxFcHFfekJ4VVk',
                 'created_at' => '2019-05-27 00:00:00',
                 'updated_at' => '2019-05-27 00:00:00'
             ],

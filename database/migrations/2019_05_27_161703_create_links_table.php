@@ -15,6 +15,8 @@ class CreateLinksTable extends Migration
     {
         Schema::create('links', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->unsignedInteger('libro_id');
+            $table->foreign('libro_id')->references('id')->on('libros');
             $table->string('titulo', 100)->unique();
             $table->string('url', 100)->unique();
             $table->timestamps();

@@ -11,12 +11,12 @@ class Subsistema extends Model
     //Muchos a muchos
     //Un subsistema puede tener muchos semestres
     public function semestres(){
-        return $this->belongsToMany(Semestre::class);
+        return $this->belongsToMany(Semestre::class, 'libro_semestre_subsistema');
     }
 
     //Muchos a muchos
     //Un subsistema puede tener muchos libros
     public function libros(){
-        return $this->belongsToMany(Libros::class);
+        return $this->belongsToMany(Libros::class, 'libro_semestre_subsistema');
     }
 }
